@@ -3,13 +3,14 @@
     background-color: #E3E1E1;
 }
 
+
+
 header {
-    width: 35%;
     border: solid;
     line-height: 50%;
-    float: left;
     margin: 0;
     padding: 0;
+    word-wrap: break-word;
 }
 
 h1,
@@ -102,7 +103,6 @@ input[type=text] {
 @media screen and (max-width: 600px) {
     nav,
     .input[type=text] {
-        float: none;
         display: block;
         text-align: left;
         width: 100%;
@@ -115,9 +115,54 @@ input[type=text] {
     }
 }
 
-.head,
-.to-flex {
-    display: flex;
+.grid-container {
+    display: grid; padding: 0px;
+}
+
+header {
+    grid-column: 1; grid-row: 1;
+    height: 83px;
+    
+}
+
+nav {
+    grid-column: 2; grid-row: 1;
+    height: 50%;
+    width: auto;
+}  
+
+div.deals-aside {
+    grid-column: 1; grid-row: 2;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 15px;
+    height: 850px;
+}
+
+div.catagories-info {
+    grid-column: 1; grid-row: 2;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 15px;
+    width: 135px;
+}
+
+div.home-aside,
+div.games-table {
+    grid-column: 2; grid-row: 2;
+}
+
+footer {
+    grid-column: 1 / span 2; grid-row: 3;  
+}
+
+div.shopping-cart-info,
+div.games-ideas-info,
+div.gifts-info,
+div.return-info-div,
+div.points-info,
+div.about-us-div {
+    grid-column: 1 /span 2; grid-row: 2;
 }
 
 .deals-div,
@@ -132,7 +177,8 @@ caption.latest {
 }
 
 span.gamers,
-.deals {
+h3.deals,
+h3.games {
     color: #1DD2FF;
 }
 
@@ -143,6 +189,7 @@ td {
     border-width: 1px;
     border-color: #1DD2FF;
     padding: 5px;
+    word-wrap: break-word
 }
 
 table.game-list {
@@ -160,6 +207,7 @@ td.game {
 }
 
 footer {
+    border-top: solid thin black;
     color: black;
     position: fixed;
     bottom: 0;
@@ -194,8 +242,4 @@ footer li.follow-us {
 footer li a:hover {
     background-color: #1DD2FF;
     color: white;
-}
-
-hr.padding {
-    padding-bottom: 50px;
 }
