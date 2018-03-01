@@ -18,6 +18,10 @@ h1,
     color: #1DD2FF;
     text-align: center;
 }
+header a{
+    text-decoration: none;
+    color: #1DD2FF;
+}
 
 p.slogan,
 p.add-sum,
@@ -29,6 +33,7 @@ p.return-info,
 p.cart-info {
     text-align: center;
     font-size: 17px;
+    color: black;
 }
 
 p.add-sum,
@@ -85,7 +90,8 @@ li a:hover {
 
 li.cart,
 li.cit-links,
-li.search {
+li.search,
+li.about-us {
     float: right;
 }
 
@@ -157,7 +163,8 @@ div.games-ideas-info,
 div.gifts-info,
 div.return-info-div,
 div.points-info,
-div.about-us-div {
+div.about-us-div,
+div.deal-info {
     text-align: center;
     width: 100%;
 }
