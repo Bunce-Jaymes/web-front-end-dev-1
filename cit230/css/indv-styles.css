@@ -11,6 +11,7 @@ header {
     word-wrap: break-word;
 }
 
+
 h1,
 #location,
 #process,
@@ -30,7 +31,9 @@ p.about-us-info,
 p.deals-info,
 p.trade-info,
 p.return-info,
-p.cart-info {
+p.cart-info,
+p.the-process-info,
+p.game-info {
     text-align: center;
     font-size: 17px;
     color: black;
@@ -123,6 +126,7 @@ input[type=text] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url(../../indv-website/images/medium/background.jpg);
 }
 
 header {
@@ -164,13 +168,16 @@ div.gifts-info,
 div.return-info-div,
 div.points-info,
 div.about-us-div,
-div.deal-info {
+div.deal-info,
+div.the-process-info-div,
+div.contact-us-info-div {
     text-align: center;
     width: 100%;
 }
 
 div.about-us-div {
-    height: 717px;
+    height: 544px;
+    flex-wrap: wrap;
 }
 
 .deals-div,
