@@ -3,14 +3,33 @@
     background-color: #E3E1E1;
 }
 
+img {
+    width: 100%;
+}
+
 header {
-    border: solid;
+    border: solid grey;
     line-height: 50%;
     margin: 0;
     padding: 0;
     word-wrap: break-word;
+    background-image: url(../../indv-website/images/small/banner.jpg);
+    background-repeat: no-repeat;
 }
 
+.logo {
+    text-shadow: -0.75px -0.75px 0 #000,
+    0.75px -0.75px 0 #000,
+    -0.75px 0.75px 0 #000,
+    0.75px 0.75px 0 #000;
+}
+
+p.slogan,
+.logo,
+header,
+span.two {
+    background-color: transparent;
+}
 
 h1,
 #location,
@@ -19,12 +38,12 @@ h1,
     color: #1DD2FF;
     text-align: center;
 }
-header a{
+
+header a {
     text-decoration: none;
     color: #1DD2FF;
 }
 
-p.slogan,
 p.add-sum,
 p.gift-info,
 p.about-us-info,
@@ -37,6 +56,16 @@ p.game-info {
     text-align: center;
     font-size: 17px;
     color: black;
+}
+
+p.slogan {
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    text-shadow: -0.75px -0.75px 0 #000,
+    0.75px -0.75px 0 #000,
+    -0.75px 0.75px 0 #000,
+    0.75px 0.75px 0 #000;
 }
 
 p.add-sum,
@@ -57,11 +86,12 @@ span.red-points {
 }
 
 span.two {
-    color: #373D2F;
+    color: white;
 }
 
 nav {
     background-color: #333;
+    border: solid thin black;
 }
 
 nav ul {
@@ -98,6 +128,11 @@ li.about-us {
     float: right;
 }
 
+.active {
+    background-color: #1DD2FF;
+    color: white;
+}
+
 input[type=text] {
     float: right;
     padding: 6px;
@@ -107,47 +142,30 @@ input[type=text] {
     font-size: 15px;
 }
 
-@media screen and (max-width: 600px) {
-    nav,
-    .input[type=text] {
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-    }
-    
-    input[type=text] {
-        border: 1px solid #ccc;
-    }
-}
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-image: url(../../indv-website/images/medium/background.jpg);
+    height: 100%;
 }
 
 header {
     order: 0;
     width: 33%;
-
 }
 
 nav {
     width: 66%;
     height: 50%;
-}  
+}
 
 div.deals-aside {
     width: 34%;
-    height: 663px;
+    height: 1711px;
 }
 
 div.catagories-info {
     width: 13%;
-    height: 1000px;
 }
 
 div.home-aside {
@@ -155,11 +173,15 @@ div.home-aside {
 }
 
 div.games-table {
-    width:  86%;
+    width: 86%;
     padding: 5px;
+    height: 1391px;
+    
 }
 
-footer {  
+div.about-us-div {
+    height: 750px;
+    flex-wrap: wrap;
 }
 
 div.shopping-cart-info,
@@ -175,30 +197,25 @@ div.contact-us-info-div {
     width: 100%;
 }
 
-div.about-us-div {
-    height: 544px;
-    flex-wrap: wrap;
-}
-
-.deals-div,
-.catagories-div {
-}
-
 caption.latest {
     padding-bottom: 15px;
 }
 
 span.gamers,
 h3.deals,
-h3.games {
+h3.games,
+h3#location,
+h3.catagories,
+h1 {
     color: #1DD2FF;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 table,
 th,
 td {
     border-style: groove;
-    border-width: 1px;
+    border-width: 2px;
     border-color: #1DD2FF;
     padding: 5px;
     word-wrap: break-word
@@ -207,7 +224,7 @@ td {
 table.game-list {
 
     border-style: groove;
-    border-width: 1px;
+    border-width: 2px;
     border-color: #1DD2FF;
 }
 
@@ -253,4 +270,101 @@ footer li.follow-us {
 footer li a:hover {
     background-color: #1DD2FF;
     color: white;
+}
+
+@media (max-width: 600px) {
+    .input[type=text] {
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+
+    input[type=text] {
+        border: 1px solid #ccc;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        height: 50%;
+        width: 100%;
+    }
+
+    footer {
+        height: 7%;
+        width: 100%;
+    }
+
+    div.home-aside {
+        order: 1;
+        width: 100%;
+    }
+
+    div.deals-aside {
+        order: 2;
+        width: 100%;
+    }
+
+    div.catagories-info {
+        order: 2;
+        width: 100%;
+        height: 501px;
+    }
+
+    div.games-table {
+        order: 1;
+        width: 100%;
+    }
+
+    li.cart,
+    li.cit-links,
+    li.search {
+        float: left;
+    }
+    
+    li.about-us {
+        float: right;
+    }
+    
+    div.game-list-div {
+        overflow-y: auto;
+        width: 100%;
+    }
+    
+    div.about-us-div {
+        height: 916px;
+    }
+    div.deal-info{
+        height: 400px;
+    }
+    
+    div.points-info {
+        height: 320px;
+    }
+    div.the-process-info-div {
+        height: 319px;
+    }
+    div.deals-aside {
+        height: 1443px;
+    }
+    
+    div.home-aside {
+        text-align: center;
+    }
+    
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
 }
