@@ -272,7 +272,7 @@ footer li a:hover {
     color: white;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .input[type=text] {
         display: block;
         text-align: left;
