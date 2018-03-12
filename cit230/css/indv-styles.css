@@ -8,13 +8,13 @@ img {
 }
 
 header {
-    border: solid grey;
+    border: solid #1DD2FF;
     line-height: 50%;
     margin: 0;
     padding: 0;
     word-wrap: break-word;
     background-image: url(../../indv-website/images/small/banner.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .logo {
@@ -91,7 +91,7 @@ span.two {
 
 nav {
     background-color: #333;
-    border: solid thin black;
+    border: solid grey;
 }
 
 nav ul {
@@ -176,7 +176,7 @@ div.games-table {
     width: 86%;
     padding: 5px;
     height: 1391px;
-    
+
 }
 
 div.about-us-div {
@@ -235,10 +235,10 @@ td.game {
 }
 
 footer {
-    border-top: solid thin black;
+    border-top: solid #1DD2FF;
     color: black;
     position: fixed;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     width: 100%;
     font-size: 12px;
@@ -272,18 +272,7 @@ footer li a:hover {
     color: white;
 }
 
-@media (max-width: 600px) {
-    .input[type=text] {
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-    }
-
-    input[type=text] {
-        border: 1px solid #ccc;
-    }
-
+@media screen and (min-width: 827px) and (max-width: 1024px) {
     .flex-container {
         display: flex;
         flex-wrap: wrap;
@@ -293,6 +282,8 @@ footer li a:hover {
 
     header {
         width: 100%;
+        background-image: url(../../indv-website/images/small/banner.jpg);
+        background-repeat: repeat;
     }
 
     nav {
@@ -324,30 +315,39 @@ footer li a:hover {
     div.games-table {
         order: 1;
         width: 100%;
+        height: 1378px;
+
+    }
+
+    div.deals-table,
+    div.trades-table {
+        order: 1;
+        width: 100%;
+        height: 854px;
     }
 
     li.cart,
     li.cit-links,
     li.search {
-        float: left;
+        float: right;
     }
-    
+
     li.about-us {
         float: right;
     }
-    
+
     div.game-list-div {
         overflow-y: auto;
         width: 100%;
     }
-    
+
     div.about-us-div {
         height: 916px;
     }
-    div.deal-info{
+    div.deal-info {
         height: 400px;
     }
-    
+
     div.points-info {
         height: 320px;
     }
@@ -355,13 +355,133 @@ footer li a:hover {
         height: 319px;
     }
     div.deals-aside {
-        height: 1443px;
+        height: 1720px;
     }
-    
+
     div.home-aside {
         text-align: center;
     }
-    
+
+    div.return-info-div {
+        height: 337px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 826px) {
+    img {
+        width: 100%;
+    }
+
+    .input[type=text] {
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+
+    input[type=text] {
+        border: 1px solid #ccc;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    header {
+        width: 100%;
+        background-image: url(../../indv-website/images/small/banner.jpg);
+        background-repeat: repeat;
+    }
+
+    nav {
+        height: 50%;
+        width: 100%;
+    }
+
+    footer {
+        height: 7%;
+        width: 100%;
+    }
+
+    div.home-aside {
+        order: 1;
+        width: 100%;
+    }
+
+    div.deals-aside {
+        order: 2;
+        width: 100%;
+    }
+
+    div.catagories-info {
+        order: 2;
+        width: 100%;
+        height: 501px;
+    }
+
+    div.games-table {
+        order: 1;
+        width: 100%;
+        height: 1378px;
+
+    }
+
+    div.deals-table,
+    div.trades-table {
+        order: 1;
+        width: 100%;
+        height: 854px;
+    }
+
+    li.cart,
+    li.cit-links,
+    li.search {
+        float: left;
+    }
+
+    li.about-us {
+        float: right;
+    }
+
+    div.game-list-div {
+        overflow-y: auto;
+        width: 100%;
+    }
+
+    div.about-us-div {
+        height: 916px;
+    }
+    div.deal-info {
+        height: 400px;
+    }
+
+    div.points-info {
+        height: 320px;
+    }
+    div.the-process-info-div {
+        height: 319px;
+    }
+    div.deals-aside {
+        height: 1500px;
+    }
+
+    div.home-aside {
+        text-align: center;
+    }
+
+    div.return-info-div {
+        height: 337px;
+    }
+
     iframe {
         width: 100%;
         height: auto;
