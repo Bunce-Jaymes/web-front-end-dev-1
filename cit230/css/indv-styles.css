@@ -172,7 +172,9 @@ div.home-aside {
     width: 66%;
 }
 
-div.games-table {
+div.games-table,
+div.trades-table,
+div.deals-table {
     width: 86%;
     padding: 5px;
     height: 1391px;
@@ -272,7 +274,7 @@ footer li a:hover {
     color: white;
 }
 
-@media screen and (min-width: 827px) and (max-width: 1024px) {
+@media screen and (min-width: 827px) and (max-width: 1211px) {
     .flex-container {
         display: flex;
         flex-wrap: wrap;
