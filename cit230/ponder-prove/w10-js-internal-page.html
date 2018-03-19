@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<script src="../../cit230/js/"></script>
-    
+<!--<script src="myScript1.js"></script>-->
+
+<script type="text/javascript">
+    function sendData() {
+        var save = window.confirm("Please verify all the information below is correct:\n" + "\nReason: " + document.contactform.reason.value + "\nFirst Name: " + document.contactform.firstname.value + "\nLast Name: " + document.contactform.lastname.value + "\nEmail: " + document.contactform.email.value + "\nMessage: " + document.contactform.comment.value);
+
+        if (save == true) {
+            window.alert("Message was sucessfully sent, we will process it as soon as possible.\nThank you for you time!")
+        } else {
+            window.alert("Data was not submitted")
+        }
+    }
+
+    function addDate() {
+        var date = (Date() + "\n\n");
+        document.contactform.comment.value += date;
+    }
+
+    /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+
+</script>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="../../cit230/css/indv-styles.css" rel="stylesheet" type="text/css">
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Contact Us</title>
@@ -28,45 +62,20 @@
             <ul>
                 <li>
                     <div class="dropdown">
-                        <a href="../games.html" onmouseover="myFunction()">Games <i class="fa fa-angle-down"></i></a>
-                        
+                        <button class="dropbtn" onclick="myFunction()">Games <i class="fa fa-angle-down"></i>
+               </button>
                         <div class="dropdown-content" id="myDropdown">
-                            <a href="../games/game-ideas.html">Add a game to D2D</a>
-                            <a href="../games/gifts.html">Send a game as a gift</a>
+                            <a href="../games.html">Games</a>
+                            <a href="../games.html">Games Info</a>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="dropdown">
-                        
-                        <a href="../deals.html" onmouseover="myFunction()">Deals <i class="fa fa-angle-down"></i></a>
-                        
-                        <div class="dropdown-content" id="myDropdown">
-                            <a href="../deals/deal-info.html">Why such good deals?</a>
-                        </div>
-                    </div>
-                    <li>
-                        <div class="dropdown">
-                            <a href="../trade.html" onmouseover="myFunction()">Trades <i class="fa fa-angle-down"></i></a>
-                            
-                            <div class="dropdown-content" id="myDropdown">
-                                <a href="../trade/points.html">D2D Points Information</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <a href="../about-us.html" onmouseover="myFunction()" class="active">About Us <i class="fa fa-angle-down"></i></a>
-                            <div class="dropdown-content" id="myDropdown">
-                                <a href="contact-us.html" class="active">Contact Us</a>
-                                <a href="returns.html">Returns</a>
-                                <a href="the-process.html">The Process</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cit-links"><a href="../../cit230-links.html"> CIT230-Links</a></li>
-                    <li class="cart"><a href="../cart.html"><i class="fa fa-shopping-cart"></i></a></li>
-                    <li class="search"><label><input id="search" type="text" placeholder="Search.."></label></li>
+                <li><a href="../deals.html">Deals</a></li>
+                <li><a href="../trade.html">Trade</a></li>
+                <li><a href="../about-us.html">About Us</a></li>
+                <li class="cit-links"><a href="../../cit230-links.html"> CIT230-Links</a></li>
+                <li class="cart"><a href="../cart.html">Cart</a></li>
+                <li class="search"><label><input id="search" type="text" placeholder="Search.."></label></li>
             </ul>
         </nav>
 
