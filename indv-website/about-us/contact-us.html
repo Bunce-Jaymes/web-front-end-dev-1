@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<script src="../../cit230/js/"></script>
     
 <head>
     <meta charset="utf-8">
@@ -10,6 +8,8 @@
     <link href="../../cit230/css/indv-styles.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="../../cit230/js/"></script>
 
     <title>Contact Us</title>
 </head>
@@ -41,7 +41,7 @@
                         
                         <a href="../deals.html" onmouseover="myFunction()">Deals <i class="fa fa-angle-down"></i></a>
                         
-                        <div class="dropdown-content" id="myDropdown">
+                        <div class="dropdown-content" id="myDropdown2">
                             <a href="../deals/deal-info.html">Why such good deals?</a>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                         <div class="dropdown">
                             <a href="../trade.html" onmouseover="myFunction()">Trades <i class="fa fa-angle-down"></i></a>
                             
-                            <div class="dropdown-content" id="myDropdown">
+                            <div class="dropdown-content" id="myDropdown3">
                                 <a href="../trade/points.html">D2D Points Information</a>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                     <li>
                         <div class="dropdown">
                             <a href="../about-us.html" onmouseover="myFunction()" class="active">About Us <i class="fa fa-angle-down"></i></a>
-                            <div class="dropdown-content" id="myDropdown">
+                            <div class="dropdown-content" id="myDropdown4">
                                 <a href="contact-us.html" class="active">Contact Us</a>
                                 <a href="returns.html">Returns</a>
                                 <a href="the-process.html">The Process</a>
@@ -66,7 +66,7 @@
                     </li>
                     <li class="cit-links"><a href="../../cit230-links.html"> CIT230-Links</a></li>
                     <li class="cart"><a href="../cart.html"><i class="fa fa-shopping-cart"></i></a></li>
-                    <li class="search"><label><input id="search" type="text" placeholder="Search.."></label></li>
+                <li class="search"><form><label><input id="search" type="text" placeholder="Search.."></label></form></li>
             </ul>
         </nav>
 
@@ -103,7 +103,7 @@
                 <label for="comment">Message:</label>
                 <br>
                 <br>
-                <button type="buttom" onClick="addDate()" class="button">Add Date</button>
+                <button type="button" onClick="addDate()" class="button">Add Date</button>
                 <br>
                 <textarea id="comment" cols="40" rows="10" placeholder="Please type your message" required></textarea>
                 <br>
@@ -111,7 +111,7 @@
                 <label for="email-program" id="email-info">Yes, I would like to recieve updates on the latest D2D Trades and D2D Deals </label>
                 <br>
                 <br>
-                <label for="submit">&nbsp;</label>
+                
                 <button type="submit" name="Submit" class="button" onClick="sendData()">Submit</button>
                 <input type="reset" value="Reset" class="button">
                 <br>

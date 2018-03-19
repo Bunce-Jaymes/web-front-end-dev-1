@@ -18,12 +18,46 @@ toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
     
+    document.getElementById("myDropdown2").classList.toggle("show");
+    
+    document.getElementById("myDropdown3").classList.toggle("show");
+    
+    document.getElementById("myDropdown4").classList.toggle("show");
+    
+}
 // Close the dropdown if the user clicks outside of it
-    window.onmouseleave = function (e) {
+window.onmouseleave = function (e) {
     if (!e.target.matches('.dropdown')) {
         var myDropdown = document.getElementById("myDropdown");
         if (myDropdown.classList.contains('show')) {
             myDropdown.classList.remove('show');
         }
     }
-}
+};
+
+window.onmouseleave = function (e) {
+    if (!e.target.matches('.dropdown')) {
+        var myDropdown = document.getElementById("myDropdown2");
+        if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+        }
+    }
+};
+
+window.onmouseleave = function (e) {
+    if (!e.target.matches('.dropdown')) {
+        var myDropdown = document.getElementById("myDropdown3");
+        if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+        }
+    }
+};
+
+window.onmouseleave = function (e) {
+    if (!e.target.matches('.dropdown')) {
+        var myDropdown = document.getElementById("myDropdown4");
+        if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+        }
+    }
+};

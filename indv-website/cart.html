@@ -49,7 +49,7 @@
 
                         <a href="deals.html">Deals <i class="fa fa-angle-down"></i></a>
 
-                        <div class="dropdown-content" id="myDropdown">
+                        <div class="dropdown-content" id="myDropdown2">
                             <a href="deals/deal-info.html">Why such good deals?</a>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                         <div class="dropdown">
                             <a href="trade.html">Trades <i class="fa fa-angle-down"></i></a>
 
-                            <div class="dropdown-content" id="myDropdown">
+                            <div class="dropdown-content" id="myDropdown3">
                                 <a href="trade/points.html">D2D Points Information</a>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                     <li>
                         <div class="dropdown">
                             <a href="about-us.html">About Us <i class="fa fa-angle-down"></i></a>
-                            <div class="dropdown-content" id="myDropdown">
+                            <div class="dropdown-content" id="myDropdown4">
                                 <a href="about-us/contact-us.html">Contact Us</a>
                                 <a href="about-us/returns.html">Returns</a>
                                 <a href="about-us/the-process.html">The Process</a>
@@ -74,7 +74,9 @@
                     </li>
                     <li class="cit-links"><a href="../cit230-links.html"> CIT230-Links</a></li>
                     <li class="cart"><a href="cart.html" class="active"><i class="fa fa-shopping-cart"></i></a></li>
-                    <li class="search"><label><input id="search" type="text" placeholder="Search.."></label></li>
+                    <li class="search">
+                        <form><label><input id="search" type="text" placeholder="Search.."></label></form>
+                    </li>
             </ul>
         </nav>
 
@@ -108,46 +110,46 @@
                         <td class="game">
                             Available for:
                             <input type="checkbox" id="xboxPUBG" value="xboxPUBG">
-                            <label for="xboxPUBG" id="xboxPUBG"> Xbox</label>
+                            <label for="xboxPUBG" > Xbox</label>
                             <input type="checkbox" id="pcPUBG" value="pcPUBG">
-                            <label for="pcPUBG" id="pcPUBG">PC</label></td>
+                            <label for="pcPUBG" >PC</label></td>
 
                         <td class="game">
                             Available for:
                             <input type="checkbox" id="xboxDoom" value="xboxDoom">
-                            <label for="xboxDoom" id="xboxDoom"> Xbox</label>
+                            <label for="xboxDoom"> Xbox</label>
                             <input type="checkbox" id="playstationDoom" value="playstationDoom">
-                            <label for="playstationDoom" id="playstationDoom">PlayStation</label>
+                            <label for="playstationDoom" >PlayStation</label>
                             <input type="checkbox" id="pcDoom" value="pcDoom">
-                            <label for="pcDoom" id="pcDoom">PC</label></td>
+                            <label for="pcDoom">PC</label></td>
 
                         <td class="game">
                             Available for:
                             <input type="checkbox" id="xboxCod" value="xboxCod">
-                            <label for="xboxCod" id="xboxCod"> Xbox</label>
+                            <label for="xboxCod"> Xbox</label>
                             <input type="checkbox" id="playstationCod" value="playstationCod">
-                            <label for="playstationCod" id="playstationCod">PlayStation</label>
+                            <label for="playstationCod" >PlayStation</label>
                             <input type="checkbox" id="pcCod" value="pcCod">
-                            <label for="pcCod" id="pcCod">PC</label></td>
+                            <label for="pcCod" >PC</label></td>
 
 
                         <td class="game">
                             Available for:
                             <input type="checkbox" id="xboxFriday" value="xboxFriday">
-                            <label for="xboxFriday" id="xboxFriday"> Xbox</label>
+                            <label for="xboxFriday" > Xbox</label>
                             <input type="checkbox" id="playstationFriday" value="playstationFriday">
-                            <label for="playstationFriday" id="playstationFriday">PlayStation</label>
+                            <label for="playstationFriday" >PlayStation</label>
                             <input type="checkbox" id="pcFriday" value="pcFriday">
-                            <label for="pcFriday" id="pcFriday">PC</label></td>
+                            <label for="pcFriday">PC</label></td>
 
                         <td class="game">
                             Available for:
                             <input type="checkbox" id="xboxBattle" value="xboxBattle">
-                            <label for="xboxBattle" id="xboxBattle"> Xbox</label>
+                            <label for="xboxBattle"> Xbox</label>
                             <input type="checkbox" id="playstationBattle" value="playstationBattle">
-                            <label for="playstationBattle" id="playstationBattle">PlayStation</label>
+                            <label for="playstationBattle" >PlayStation</label>
                             <input type="checkbox" id="pcBattle" value="pcBattle">
-                            <label for="pcBattle" id="pcBattle">PC</label></td>
+                            <label for="pcBattle" >PC</label></td>
                     </tr>
                 </table>
             </div>
@@ -179,7 +181,7 @@
 
                 <br>
                 <label for="zipcode">Zip Code:</label>
-                <input type="number" id="zipcode" name="zipcode" class="form" maxlength="5" minlength="5" required>
+                <input type="number" id="zipcode" name="zipcode" class="form" required>
 
                 <br>
                 <label for="email">Email:</label>
@@ -187,7 +189,7 @@
 
                 <br>
                 <br>
-                <label for="shippingtype">Shipping Type:</label>
+                <p>Shipping Type:</p>
 
                 <input type="radio" name="ship" id="twoday" value="twoday">
                 <label for="twoday">2 Day Shipping ($10.00)</label>
