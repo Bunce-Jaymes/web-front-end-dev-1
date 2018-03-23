@@ -48,7 +48,7 @@
                     var myCenter = new google.maps.LatLng(43.8231096, -111.79242369999997);
                     var mapCanvas = document.getElementById("map");
                     var mapOptions = {
-                        center: new google.maps.LatLng(43.8231096, -111.79242369999997);,
+                        center: new google.maps.LatLng(43.8231096, -111.79242369999997),
                         zoom: 5,
                         panControl: true,
                         zoomControl: true,
@@ -67,13 +67,14 @@
 
                     // Zoom to 9 when clicking on marker
                     google.maps.event.addListener(marker, 'click', function() {
-                            var pos = map.getZoom();
+                        var pos = map.getZoom();
                             map.setZoom(9);
-                            map.setCenter(marker.getPosition());
-                            window.setTimeout(function()) {
-                                map.setZoom(pos);
-                            }, 3000);
-                    });
+                        map.setCenter(marker.getPosition());
+                        window.setTimeout(function() {
+                            map.setZoom(pos);
+                        }, 3000
+                    )});
+
                 }
 
             </script>

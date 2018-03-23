@@ -288,6 +288,10 @@ div.about-us-div {
     flex-wrap: wrap;
 }
 
+div.map {
+    width: 100%;
+}
+
 div.shopping-cart-info,
 div.games-ideas-info,
 div.gifts-info,
