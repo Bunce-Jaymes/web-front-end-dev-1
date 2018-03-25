@@ -10,64 +10,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="../js/js.js"></script>
-    <script>
-        function CoordMapType(tileSize) {
-            this.tileSize = tileSize;
-        }
-
-        CoordMapType.prototype.getTile = function(coord, zoom, ownerDocument) {
-            var div = ownerDocument.createElement('div');
-            div.innerHTML = coord;
-            div.style.width = this.tileSize.width + 'px';
-            div.style.height = this.tileSize.height + 'px';
-            div.style.fontSize = '10';
-            div.style.borderStyle = 'solid';
-            div.style.borderWidth = '1px';
-            div.style.borderColor = '#AAAAAA';
-            return div;
-        };
-
-        function initMap() {
-            var myCenter = new google.maps.LatLng(43.8231096, -111.79242369999997);
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 10,
-                center: {
-                    lat: 43.8231096,
-                    lng: -111.79242369999997
-                }
-            });
-            var marker = new google.maps.Marker({
-                position: myCenter
-            });
-            marker.setMap(map);
-
-            // Insert this overlay map type as the first overlay map type at
-            // position 0. Note that all overlay map types appear on top of
-            // their parent base map.
-            map.overlayMapTypes.insertAt(
-                0, new CoordMapType(new google.maps.Size(256, 256)));
-            
-            google.maps.event.addListener(marker, 'mouseover', function() {
-                var pos = map.getZoom();
-                map.setZoom(15);
-                map.setCenter(marker.getPosition());
-                window.setTimeout(function() {
-                    map.setZoom(pos);
-                }, 3000)
-            });
-            
-            google.maps.event.addListener(marker, 'mouseout', function() {
-                var pos = map.getZoom();
-                map.setZoom(10);
-                map.setCenter(marker.getPosition());
-                window.setTimeout(function() {
-                    map.setZoom(pos);
-                }, 3000)
-            });
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXplYZ9bBJFwoUWsnwUT_eeeig94Bg4Fc&callback=initMap"></script>
+    <!--    <script src="../../cit230/js/"></script>-->
 
     <title>About Us</title>
 </head>
@@ -144,7 +87,37 @@
                 <h3 id="location">Our Location</h3>
                 <p class="about-us-info">We are a small company located in <a href="https://www.google.com/maps/place/Rexburg,+ID/@43.8300451,-111.8582212,13z/data=!3m1!4b1!4m5!3m4!1s0x53540a4b807a98b1:0x4a49d8d1d2181c73!8m2!3d43.8231096!4d-111.7924237/">Rexburg, Idaho.</a> We are trying to provide the fastest and best trading service possible. We understand the hassle of trying to organize discs and to deal with game sharing, so we want to make this easy for you.</p>
 
-                <div id="map" style="width 100%;height: 300px;"></div>
+                <div id="map" style="width:640px; height:480px;"></div>
+                <script type="text/javascript" src="../ponder-prove/rexburg.json"></script>
+                <script>
+                    function loadMap() {
+                        var infowindow = new google.maps.InfoWindow();
+                        // Initialize Google Maps
+                        const mapOptions = {
+                            center: new google.maps.LatLng(43.8231, -111.7924),
+                            zoom: 11
+                        }
+                        const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                        var mydata = JSON.parse(data);
+
+
+                        // Initialize Google Markers
+                        for (x = 0; x < 3; x++) {
+                            let marker = new google.maps.Marker({
+                                map: map,
+                                position: new google.maps.LatLng(mydata[x].location[0], mydata[x].location[1]),
+                                title: mydata[x].name
+                            })
+                        }
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow.setContent("This works");
+                            infowindow.open(map, this);
+                        });
+                    }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXplYZ9bBJFwoUWsnwUT_eeeig94Bg4Fc&callback=loadMap"></script>
+
             </div>
 
             <hr>
