@@ -15,7 +15,7 @@ function addDate() {
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function myFunction() {
+function myFunction1() {
     document.getElementById("myDropdown").classList.toggle("show");
     
     document.getElementById("myDropdown2").classList.toggle("show");
