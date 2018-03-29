@@ -7,6 +7,38 @@ img {
     width: 100%;
 }
 
+#present {
+    width: 30%;
+    height: auto:
+}
+
+#return {
+    width: 40%;
+    height: auto;
+}
+
+#deals {
+    width: 35%;
+    height: auto;
+}
+
+#points {
+    width: 20%;
+    height: auto;
+}
+
+#trailer-div {
+    float: left;
+}
+
+#trailer-info {
+    float: left;
+    width: 48%;
+    padding: 15px;
+    border: solid #1DD2FF; 
+    padding-bottom: 15px;
+}
+
 header {
     border: solid #1DD2FF;
     line-height: 50%;
