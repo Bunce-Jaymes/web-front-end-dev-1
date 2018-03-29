@@ -105,6 +105,104 @@
              var price = 15.99;
              total = total + price;
          }
+         
+         var amount = document.getElementById("tradexboxPUBG").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradepcPUBG").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradexboxDoom").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradepcDoom").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradeplaystationDoom").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradexboxCod").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradepcCod").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradeplaystationCod").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradexboxFriday").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradepcFriday").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradeplaystationFriday").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradexboxBattle").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradepcBattle").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
+
+         var amount = document.getElementById("tradeplaystationBattle").checked;
+
+         if (amount == true) {
+             var price = 7;
+             total = total + price;
+         }
 
          var amount = document.getElementById("twoday").checked;
 
@@ -212,6 +310,90 @@
 
          if (check == true) {
              out = out + "\n(PlayStation) Battlefield 1"
+         }
+         
+         var check = document.getElementById("tradexboxPUBG").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (Xbox) Player Unknow's Battlegrounds"
+         }
+
+         var check = document.getElementById("tradepcPUBG").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (PC) Player Unknow's Battlegrounds"
+         }
+
+         var check = document.getElementById("tradexboxDoom").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (Xbox) Doom 2016"
+         }
+
+         var check = document.getElementById("tradepcDoom").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (PC) Doom 2016"
+         }
+
+         var check = document.getElementById("tradeplaystationDoom").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (PlayStation) Doom 2016"
+         }
+
+         var check = document.getElementById("tradexboxCod").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (Xbox) Call of Duty: WWII"
+         }
+
+         var check = document.getElementById("tradepcCod").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (PC) Call of Duty: WWII"
+         }
+
+         var check = document.getElementById("tradeplaystationCod").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (PlayStation) Call of Duty: WWII"
+         }
+
+         var check = document.getElementById("tradexboxFriday").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (Xbox) Friday the 13th: The game"
+         }
+
+         var check = document.getElementById("tradepcFriday").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (PC) Friday the 13th: The game"
+         }
+
+         var check = document.getElementById("tradeplaystationFriday").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (PlayStation) Friday the 13th: The game"
+         }
+
+         var check = document.getElementById("tradexboxBattle").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (Xbox) Battlefield 1"
+         }
+
+         var check = document.getElementById("tradepcBattle").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (PC) Battlefield 1"
+         }
+
+         var amount = document.getElementById("tradeplaystationBattle").checked;
+
+         if (check == true) {
+             out = out + "\nTrading: (PlayStation) Battlefield 1"
          }
 
 
