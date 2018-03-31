@@ -1,6 +1,7 @@
 * {
     font-family: helvetica, Times, courier;
     background-color: #E3E1E1;
+
 }
 
 img {
@@ -27,10 +28,11 @@ img {
     width: 20%;
     height: auto;
 }
+
 #games-pic {
     width: 30%;
     height: auto;
-    
+
 }
 
 #deal {
@@ -45,7 +47,7 @@ img {
     float: left;
     width: 48%;
     padding: 15px;
-    border: solid #1DD2FF; 
+    border: solid #1DD2FF;
     padding-bottom: 15px;
 }
 
@@ -94,7 +96,8 @@ p.trade-info,
 p.return-info,
 p.cart-info,
 p.the-process-info,
-p.game-info {
+p.game-info,
+p.trailer-info {
     text-align: center;
     font-size: 17px;
     color: black;
@@ -190,7 +193,7 @@ li.about-us {
 }
 
 .icon {
-  display: none;
+    display: none;
 }
 
 
@@ -199,7 +202,7 @@ li.about-us {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 121px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     color: white;
     border-left: solid grey;
@@ -215,6 +218,7 @@ i {
     color: white;
     background-color: transparent;
 }
+
 .dropdown-content a {
     float: none;
     color: white;
@@ -254,7 +258,8 @@ textarea {
     border: solid thin grey;
 }
 
-#email-info {
+#email-info,
+.email-info{
     font-size: 12px;
     color: gray;
 }
@@ -273,8 +278,9 @@ textarea {
 }
 
 /*style items (options):*/
+
 option {
-  background-color: #1DD2FF;
+    background-color: #1DD2FF;
 }
 
 .flex-container {
@@ -307,23 +313,30 @@ div.home-aside {
     width: 66%;
 }
 
-div.games-table2,
-div.trades-table2,
-div.deals-table2 {
+div.games-table2 {
     width: 86%;
     padding: 5px;
     height: 1391px;
 
 }
 
+div.trades-table2,
+div.deals-table2 {
+    width: 86%;
+    padding: 5px;
+    height: 750px;
+}
+
 div.shopping-cart-info {
-    height: 1000px;
+    height: 570px;
 }
 
 div.checkout-table,
 div.games-table,
 div.deals-table,
-div.trade-table{
+div.trade-table,
+div.games,
+div.deal {
     width: 100%;
     padding: 5px;
 }
@@ -353,6 +366,12 @@ div.the-process-info-div,
 div.contact-us-info-div {
     text-align: center;
     width: 100%;
+}
+
+div.trailer-info-div {
+    height: 926px;
+    text-align: center;
+    font-size:
 }
 
 div.contact-us-info-div {
@@ -435,6 +454,41 @@ footer li a:hover {
 }
 
 @media screen and (min-width: 827px) and (max-width: 1211px) {
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 121px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        color: white;
+        border-left: solid grey;
+        border-right: solid grey;
+        border-bottom: solid grey;
+    }
+
+    .dropdown:active .dropdown-content {
+        display: block;
+    }
+
+    i {
+        color: white;
+        background-color: transparent;
+    }
+    .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #1DD2FF;
+        color: white;
+    }
     .flex-container {
         display: flex;
         flex-wrap: wrap;
@@ -536,9 +590,65 @@ footer li a:hover {
 }
 
 @media screen and (max-width: 826px) {
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
     img {
         width: 100%;
     }
+
+    #present,
+    #deal,
+    #games-pic,
+    #deals,
+    #trade,
+    #points,
+    #return {
+        width: 100%;
+    }
+
+    div.gifts-info {
+        height: 700px;
+    }
+
+    div.games-ideas-info {
+        height: 600px;
+    }
+
+    div.games-table2,
+    div.deals-table2,
+    div.trades-table2 {
+        height: auto;
+    }
+
+    div.games {
+        height: 600px;
+    }
+
+    div.deal {
+        height: 700px;
+    }
+
+    div.deal-info {
+        height: 600px;
+    }
+
+    div.points-info {
+        height: 750px;
+    }
+
+    div.contact-us-info-div {
+        height: 900px;
+    }
+
+    div.return-info-div {
+        height: 500px;
+    }
+
+    div.the-process-info-div {
+        height: 500px;
+    }
+
 
     .input[type=text] {
         display: block;
@@ -597,6 +707,7 @@ footer li a:hover {
 
     }
 
+
     div.deals-table,
     div.trades-table {
         order: 1;
@@ -622,26 +733,13 @@ footer li a:hover {
     div.about-us-div {
         height: 916px;
     }
-    div.deal-info {
-        height: 400px;
-    }
 
-    div.points-info {
-        height: 320px;
-    }
-    div.the-process-info-div {
-        height: 319px;
-    }
     div.deals-aside {
-        height: 1500px;
+        height: 1718px;
     }
 
     div.home-aside {
         text-align: center;
-    }
-
-    div.return-info-div {
-        height: 337px;
     }
 
     iframe {
